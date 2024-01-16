@@ -679,18 +679,28 @@ body {
   align-items: center;
   gap: 50px;
 }
-.video-sec-left > h1 {
+
+.video-sec-h1 {
+  color: var(--heading-color);
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
   width: 80%;
 }
-.video-sec-left > p {
+.video-sec-p {
   width: 100%;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 50px;
 }
 .video-sec-left-list {
   color: var(--heading-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
-  margin-left: 30px;
+  margin-left: 16px;
   margin-bottom: 30px;
 }
 .video-sec-right {
@@ -1008,6 +1018,18 @@ input[type="email"]:focus {
   }
   .deals-h1 {
     font-size: 24px;
+  }
+  .video-sec-h1 {
+    font-size: 24px;
+  }
+  .video-sec-p {
+    font-size: 14px;
+  }
+  .reviews-h1 {
+    font-size: 24px;
+  }
+  .reviews-p {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 600px) {
