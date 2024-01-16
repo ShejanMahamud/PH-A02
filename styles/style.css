@@ -884,7 +884,6 @@ body {
   background-position: center center;
   border-radius: 16px;
   position: relative;
-  overflow: hidden;
 }
 .newsletter-sec-right-ribbon {
   background-color: var(--primary-color);
@@ -896,9 +895,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 5px;
-  bottom: 45px;
-  transform: rotate(-20deg);
+  right: 0;
 }
 .newsletter-sec-right-ribbon > h1 {
   color: #fff;
@@ -911,6 +908,7 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 20px;
   width: 100%;
 }
 .newsletter-sec-left {
@@ -1095,11 +1093,11 @@ input[type="email"]:focus {
   }
   .video-sec {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 400px 400px;
+    grid-template-rows: repeat(2, 1fr);
   }
   .newsletter-sec {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 400px 400px;
+    grid-template-rows: repeat(2, 1fr);
     gap: 30px;
   }
   .newsletter-sec-right-ribbon {
@@ -1148,6 +1146,7 @@ input[type="email"]:focus {
     padding: 80px 100px;
   }
 }
+
 /* Tablets (601px to 991px) */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .header-picker {
@@ -1157,5 +1156,14 @@ input[type="email"]:focus {
   }
   .header-banner {
     padding: 50px 20px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .reviews-sec {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
   }
 }
