@@ -296,6 +296,7 @@ body {
   border-radius: 8px;
 }
 .popular-tour-right > img {
+  height: 100%;
   width: 100%;
 }
 /* destination gallery */
@@ -316,6 +317,13 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+.destination-h1 {
+  color: #131318;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 .destination-p {
   width: 50%;
@@ -667,7 +675,7 @@ body {
   margin: 100px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 450px;
+  grid-template-rows: repeat(1, 1fr);
   align-items: center;
   gap: 50px;
 }
@@ -895,7 +903,9 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 0;
+  right: 10px;
+  bottom: 40px;
+  rotate: -20deg;
 }
 .newsletter-sec-right-ribbon > h1 {
   color: #fff;
@@ -977,6 +987,29 @@ input[type="email"]:focus {
 /* footer end */
 
 /* media query  */
+@media screen and (max-width: 599px) {
+  .destination-h1 {
+    font-size: 24px;
+  }
+  .destination-p {
+    font-size: 14px;
+  }
+  .tour-left-h1 {
+    font-size: 24px;
+  }
+  .tour-left-p-1 {
+    font-size: 14px;
+  }
+  .choose-h1 {
+    font-size: 24px;
+  }
+  .choose-p {
+    font-size: 14px;
+  }
+  .deals-h1 {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 600px) {
   /* header part */
   .menu-icon {
@@ -1031,11 +1064,9 @@ input[type="email"]:focus {
 
   .popular-tour-sec {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto;
   }
-  .popular-tour-left {
-    width: 95%;
-  }
+
   .destination-gallery {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 250px);
@@ -1102,7 +1133,7 @@ input[type="email"]:focus {
   }
   .newsletter-sec-right-ribbon {
     width: 50%;
-    right: 4px;
+    right: 0;
     bottom: 40px;
   }
   .reviews-sec {
@@ -1145,8 +1176,17 @@ input[type="email"]:focus {
   .header-banner {
     padding: 80px 100px;
   }
+  .first-deals-details {
+    width: 60%;
+  }
 }
-
+@media screen and (max-width: 992px) {
+  .newsletter-sec-right-ribbon {
+    text-align: center;
+    right: 16px;
+    bottom: 28px;
+  }
+}
 /* Tablets (601px to 991px) */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .header-picker {
@@ -1165,5 +1205,12 @@ input[type="email"]:focus {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+  }
+  .first-deals-details {
+    width: 70%;
+  }
+  .popular-tour-sec {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
   }
 }
