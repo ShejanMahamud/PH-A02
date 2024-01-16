@@ -144,8 +144,9 @@ body {
 }
 .header-banner-h1 {
   color: #fff;
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 800;
+  text-align: center;
 }
 .header-banner-p {
   width: 70%;
@@ -168,13 +169,18 @@ body {
   margin: 0 auto;
 }
 .where-go {
+  display: flex;
+  align-items: center;
   border-radius: 8px;
   background: #fff;
-  padding: 12px 24px 12px 12px;
+  padding: 12px 12px 12px 12px;
+  justify-content: space-between;
+  width: 100%;
 }
 .where-go > input[type="text"] {
   height: 24px;
   border: 0;
+  width: 100%;
 }
 .where-go > input[type="text"]:focus {
   outline: 0;
@@ -186,13 +192,20 @@ body {
   background: #fff;
   padding: 12px 12px 12px 12px;
   justify-content: space-between;
+  width: 100%;
 }
 .when-go > input[type="text"] {
   height: 24px;
   border: 0;
+  width: 100%;
 }
 .when-go > input[type="text"]:focus {
   outline: 0;
+}
+.when-go > i {
+  font-size: 20px;
+  color: var(--heading-color);
+  opacity: 0.7;
 }
 .tour-type {
   display: flex;
@@ -201,10 +214,12 @@ body {
   border-radius: 8px;
   background: #fff;
   padding: 12px 12px 12px 12px;
+  width: 100%;
 }
 .tour-type > input[type="text"] {
   height: 24px;
   border: 0;
+  width: 100%;
 }
 .tour-type > input[type="text"]:focus {
   outline: 0;
@@ -236,6 +251,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
+  gap: 50px;
   align-items: center;
   justify-items: end;
   margin: 100px auto;
@@ -245,6 +261,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  width: 100%;
+}
+.popular-tour-right {
+  width: 100%;
+  height: 100%;
 }
 .tour-left-h1 {
   color: var(--heading-color);
@@ -262,7 +283,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-left: 24px;
+  margin-left: 16px;
   margin-bottom: 30px;
 }
 .tour-left-btn {
@@ -295,6 +316,15 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+.destination-p {
+  width: 50%;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto 50px auto;
 }
 .destination-gallery > div > img {
   width: 100%;
@@ -472,6 +502,22 @@ body {
 .why-choose > div > img {
   margin-bottom: 16px;
 }
+.choose-h1 {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.choose-p {
+  width: 50%;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto 50px auto;
+}
 .choose-us-h1 {
   color: var(--heading-color);
   font-size: 20px;
@@ -518,6 +564,22 @@ body {
   display: flex;
   flex-direction: column;
   margin: 100px auto;
+}
+.deals-h1 {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.deals-p {
+  width: 50%;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto 50px auto;
 }
 .deals-details {
   display: grid;
@@ -662,24 +724,167 @@ body {
   padding: 12px 24px;
 }
 /* video sec end */
+
+/* reviews-sec start */
+.review-part {
+  width: 100%;
+  margin: 100px auto;
+}
+.reviews-sec {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 50px;
+}
+.reviews-h1 {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.reviews-p {
+  width: 50%;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto 50px auto;
+}
+.first-review-card > h1 {
+  font-size: 24px;
+}
+.first-review-card > p {
+  font-size: 14px;
+  color: #5a5a5d;
+}
+.review-image-3 {
+  width: 100%;
+  background-image: url(../images/review-image-3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 16px;
+  height: 250px;
+  color: white;
+  position: relative;
+}
+.review-location-3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 98.617px;
+  background: rgba(64, 64, 64, 0.22);
+  font-size: 12px;
+  backdrop-filter: blur(2px);
+  font-weight: 800;
+  padding: 12px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.review-image-2 {
+  width: 100%;
+  background-image: url(../images/review-image-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 16px;
+  height: 250px;
+  color: white;
+  position: relative;
+}
+.review-location-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 98.617px;
+  background: rgba(64, 64, 64, 0.22);
+  font-size: 12px;
+  backdrop-filter: blur(2px);
+  font-weight: 800;
+  padding: 12px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.review-image-1 {
+  width: 100%;
+  background-image: url(../images/review-image-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 16px;
+  height: 250px;
+  color: white;
+  position: relative;
+}
+.review-location-1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 98.617px;
+  background: rgba(64, 64, 64, 0.22);
+  font-size: 12px;
+  backdrop-filter: blur(2px);
+  font-weight: 800;
+  padding: 12px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.name-star {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.person-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.person-image > img {
+  width: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.person-details > h1 {
+  font-size: 18px;
+}
+.person-details > p {
+  font-size: 12px;
+  color: #5a5a5d;
+}
+.first-review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid var(--primary-color); */
+  padding: 20px 20px;
+  border-radius: 16px;
+}
+/* review section end */
+
 /* newsletter sec */
 .newsletter-sec {
   width: 100%;
   margin: 100px auto;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 0.8fr 1.2fr;
   grid-template-rows: 400px;
-  gap: 50px;
+  gap: 30px;
 }
 .newsletter-sec-right {
   width: 100%;
-  height: 100%;
   background-image: url(../images/northan-light.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   border-radius: 16px;
   position: relative;
+  overflow: hidden;
 }
 .newsletter-sec-right-ribbon {
   background-color: var(--primary-color);
@@ -700,11 +905,13 @@ body {
   font-size: 24px;
   font-weight: 800;
   margin-bottom: 10px;
+  width: 100%;
 }
 .newsletter-sec-right-ribbon > p {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  width: 100%;
 }
 .newsletter-sec-left {
   border-radius: 16px;
@@ -879,6 +1086,10 @@ input[type="email"]:focus {
   .first-deals-details {
     width: 80%;
   }
+  .first-deals-first {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
   .common-span {
     font-size: 12px;
   }
@@ -895,5 +1106,56 @@ input[type="email"]:focus {
     width: 50%;
     right: 4px;
     bottom: 40px;
+  }
+  .reviews-sec {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .reviews-p {
+    width: 90%;
+  }
+  .footer {
+    padding: 80px 30px;
+  }
+  .footer-sec-p {
+    width: 90%;
+  }
+  .destination-p {
+    width: 90%;
+  }
+  .choose-p {
+    width: 90%;
+  }
+  .deals-p {
+    width: 90%;
+  }
+  .first-deals-details {
+    padding: 30px;
+  }
+  .video-sec-left > p {
+    width: 90%;
+  }
+  .video-sec-left-list {
+    margin-left: 16px;
+  }
+  .video-sec {
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-banner {
+    padding: 80px 100px;
+  }
+}
+/* Tablets (601px to 991px) */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .header-picker {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .header-banner {
+    padding: 50px 20px;
   }
 }
