@@ -1304,6 +1304,15 @@ input[type="email"]:focus {
   .footer-sec-p {
     width: 90%;
   }
+  .trending-right > h1 {
+    color: #fff;
+    text-shadow: 0px 5px 13px rgba(255, 255, 255, 0.4);
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .trending-right > p {
+    font-size: 14px;
+  }
   .destination-p {
     width: 90%;
   }
